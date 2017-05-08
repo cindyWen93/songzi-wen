@@ -1,0 +1,174 @@
+.version.yacong_wu /* version checker */
+{
+	color: #00000E;
+	background-color: #206D42;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1300px;
+	min-height: 500px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-bottom: -223px;
+	padding-top: 384px;
+}
+
+#pu211-3
+{
+	width: 0.01px;
+	margin-left: -100px;
+}
+
+#u211-3
+{
+	z-index: 2;
+	min-height: 116px;
+}
+
+#u211-3-bw
+{
+	z-index: 2;
+	min-height: 116px;
+	height: 116px;
+}
+
+#menuu182
+{
+	z-index: 5;
+	width: 728px;
+	margin-right: -10000px;
+	margin-top: 23px;
+	left: 209px;
+}
+
+#u193
+{
+	width: 180px;
+}
+
+#u190,#u194-4
+{
+	width: 180px;
+	min-height: 43px;
+	margin-right: -10000px;
+}
+
+#u183
+{
+	width: 180px;
+	min-height: 43px;
+	margin-right: -10000px;
+	left: 182px;
+}
+
+#u184
+{
+	width: 180px;
+}
+
+#u185-4
+{
+	width: 180px;
+	min-height: 43px;
+	margin-right: -10000px;
+}
+
+#u197
+{
+	width: 181px;
+	min-height: 43px;
+	margin-right: -10000px;
+	left: 364px;
+}
+
+#u198
+{
+	width: 181px;
+}
+
+#u201-4
+{
+	width: 181px;
+	min-height: 43px;
+	margin-right: -10000px;
+}
+
+#u204
+{
+	width: 181px;
+	min-height: 43px;
+	margin-right: -10000px;
+	left: 547px;
+}
+
+#u207
+{
+	width: 181px;
+}
+
+#u193.MuseMenuActive,#u184.MuseMenuActive,#u198.MuseMenuActive,#u207.MuseMenuActive
+{
+	margin: 0px;
+}
+
+#u209-4
+{
+	width: 181px;
+	min-height: 43px;
+	margin-right: -10000px;
+}
+
+#u193.MuseMenuActive #u194-4,#u184.MuseMenuActive #u185-4,#u198.MuseMenuActive #u201-4,#u207.MuseMenuActive #u209-4
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 43px;
+	margin: 0px -10000px 0px 0px;
+}
+
+#u215-4
+{
+	z-index: 30;
+	width: 403px;
+	min-height: 12px;
+	margin-right: -10000px;
+	margin-top: 79px;
+	left: 378px;
+}
+
+#u240
+{
+	z-index: 34;
+	width: 49px;
+	background-color: transparent;
+	margin-left: 638px;
+	margin-top: 191px;
+	position: relative;
+}
+
+body
+{
+	position: relative;
+	min-width: 1300px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

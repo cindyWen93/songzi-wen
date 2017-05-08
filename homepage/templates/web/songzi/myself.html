@@ -1,0 +1,89 @@
+{% load staticfiles %}
+<!DOCTYPE>
+<html>
+<head>
+<meta name = "author" content="CindyWen" />
+    <meta http-equiv = "content-type" content = "text/html; charset = utf-8" />
+<title>
+温松子
+</title>
+<style type="text/css">
+footer p{
+    font-family:"STKaiti";
+    color:grey;
+    margin: 0;
+    padding: 10px 0;
+    position:absolute;
+    top:100%;
+    left:40%;
+    }
+    
+body{
+background:url("{% static  'homepage/images/cindy.jpeg'%}");
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;   
+}
+textarea {
+    width: 200px;
+    height: 150px;
+    font-size: 16pt;
+}
+
+#maindiv {
+    width: 1100px;
+    margin: 5% auto;
+  border:#BEBEBE solid 1px;
+  text-align:center;
+ 
+}
+
+
+}
+</style>
+</head>
+
+
+
+<body>
+<div id="maindiv">
+<h1>
+关于我
+</h1>
+<p>
+大名是温松子，小名是田田，英文名Cindy，微信名是温松鼠，大多数叫我松子，还叫我温大宝，有人还叫松松，还要有人叫我脑槽（cao)。<br/>
+在University of Wisconsin-Madison念电子工程，其实我还在纠结我的专业，物理，CS或者电子工程都是方向。</br>
+水日是暑假自己幻想着如果穿越到清朝就女扮男装翩翩纸扇满腹经纶的去怡红楼听曲品茶，最后留名“温木公子”或者“水日公子”<br/>
+但是感觉温木实在不好听，所以就水日了。<br/>
+开始做水日的那天天气特别凉快，而且感冒，就来了个文艺风格，which is not my normal style.<br/>
+<p>
+<p>
+因为一个夏天的两场摩天伦演唱会而爱上周杰伦。“园游会”里的那种纯真温柔是永恒的向往。<br/>
+还认认真真的崇拜一个叫Stephen Brown的人。他是一个闪闪发光的可爱的讲课会用海牛当例子的老师。<br/>
+觉得物理很有意思，洪荒宇宙里，自己的喜怒哀乐何其微小。对历史也有兴趣，时间长河中，内心的阴晴圆缺又何足挂齿。<br/>
+路遥的《平凡的世界》是对我影响很大的一本书，主人公田晓霞的善良传真温暖了我的整个少年时代。</br>
+每天嘻嘻哈哈，室友评价是怎么你每天早上起来脑子线搭的都不对。但其实也有些敏感很sensitive，几句话，一首歌，或许低下头就轻轻的哭了。
+</p>
+
+<form id="f1" onsubmit="return display()" method="post">
+<p> 您的姓名: <input type="text" name="text1" autofocus /> </p>
+<p> 给我留言: <textarea name="textarea1"></textarea> </p>
+<p> <input type="submit" name="submit1" value="Submit" onclick="return display()" /> </p>
+</form>
+
+<p>
+邮箱：swen9@wisc.edu<br/>
+微信：cindywen93
+</p>
+
+</div>
+
+<footer>
+     <p>
+    水日&#169;2014 Copyright 温松子Cindy Wen
+     </p>
+</footer>
+
+
+</body>
+</html>

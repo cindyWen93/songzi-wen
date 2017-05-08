@@ -1,0 +1,31 @@
+    {% load staticfiles %}
+    <html>
+        <head>
+            <title>Songzi's Blog</title>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        </head>
+        <body>
+            <div class="page-header">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                    <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+                {% endif %}
+                <h1><a href="{% url 'post_list' %}">Songzi's Blog</a></h1>
+            <div class="my-word">
+             <h1>OMG, You Discover me!</h1>
+                <h1>Haha, Congratulations, take a screenshot and ask Songzi for chocolate!</h1>
+            </div>
+            </div>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>

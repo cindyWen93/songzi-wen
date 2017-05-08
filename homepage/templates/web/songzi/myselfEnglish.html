@@ -1,0 +1,431 @@
+{% load staticfiles %}
+<!DOCTYPE>
+<html>
+<head>
+
+<meta name = "author" content="Wen" />
+    <meta http-equiv = "content-type" content = "text/html; charset = utf-8" />
+<title>
+关于我
+</title>
+<style type="text/css">
+footer p{
+    font-family:"STKaiti";
+    color:grey;
+    margin: 0;
+    padding: 10px 0;
+    position:absolute;
+    top:90%;
+    left:40%;
+    }
+
+.content{
+    margin-top:5%;
+}
+.me img{
+    width:370px;
+    height:500px;
+    margin-left: 100px;
+}
+
+.me{
+    position:absolute;
+}
+.lang{
+    position:absolute;
+    height:100px;
+    margin-left:600px;
+    margin-top:130px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="content">
+<div class="me">
+    <img src="{% static 'img/songzi.jpg' %}" alt="img"/>
+</div>
+
+<div class="lang">
+<pre>
+    温松子，不是假名，不是网名，不是笔名，也不是日本人，哈哈。苏辽混血，成长于鲁。
+
+    喜欢看书，家里有一面墙的书柜。最喜欢《平凡的世界》。
+
+    喜欢王菲，大约喜欢到听着她的歌写着作业听着听着就悄悄的感动的抹泪了。
+
+    还喜欢赵雷，喜欢他的家乡北京，烤鸭梨汤老酸奶，长城长陵长安街挨个逛。
+
+    养过一条叫宝宝的博美犬，多年前走失，真的很想念她。
+
+
+
+    以上。
+
+</pre>
+    </div>
+</div>
+
+<footer>
+     <p>
+    WaterSun&#169;2014 Copyright 松子
+     </p>
+</footer>
+
+
+</body>
+</html>
+
+
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{##}
+{#<head>#}
+{#    {% load staticfiles %}#}
+{#    <meta charset="utf-8">#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#    <meta name="author" content="cindywen">#}
+{##}
+{#    <title>Songzi's Page</title>#}
+{##}
+{#    <!-- css -->#}
+{#    <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %}" />#}
+{#    <link href="{%  static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />#}
+{#    <link href="{%  static 'css/nivo-lightbox.css" rel="stylesheet' %}" />#}
+{#    <link href="{%  static 'css/nivo-lightbox-theme/default/default.css' %}" rel="stylesheet" type="text/css" />#}
+{#    <link href="{%  static 'css/animations.css' %}" rel="stylesheet" />#}
+{#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+{#    <link href="{%  static 'color/default.css' %}" rel="stylesheet">#}
+{##}
+{##}
+{##}
+{#</head>#}
+{##}
+{#<body id="page-top" data-spy="scroll" data-target=".navbar-custom">#}
+{##}
+{#<audio autoplay loop>#}
+{#      	<source src="{% static  'homepage/music/faye.m4a'%}" type="audio/x-aac"/>#}
+{#      	<source src="{% static  'homepage/music/faye.mp3'%}" type="audio/mpeg"/>#}
+{#      	<source src="{% static  'homepage/music/faye.ogg'%}" type="audio/ogg"/>#}
+{#</audio>#}
+{##}
+{#<!-- introduction-->#}
+{#<section class="hero" id="intro">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-12 text-right navicon">#}
+{#                <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="row">#}
+{#            <div class="col-md-8 col-md-offset-2 text-center inner">#}
+{#                <div class="animatedParent">#}
+{#                    <h1 class="animated fadeInDown">Songzi Wen</h1>#}
+{#                    <p class="animated fadeInUp">Hey, Welcome to the world of Songzi</p>#}
+{#                    <div class="col-md-6 col-md-offset-3 text-center">#}
+{#                        <a href="#about" class="learn-more-btn btn-scroll">Learn more</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="row">#}
+{##}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
+{#<!-- /introduction -->#}
+{##}
+{#<!-- Navigation -->#}
+{#<div id="navigation">#}
+{#    <nav class="navbar navbar-custom" role="navigation">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-md-2">#}
+{#                    <div class="site-logo">#}
+{#                        <a href="index.html" class="brand">Songzi</a>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{##}
+{#                <div class="col-md-10">#}
+{##}
+{#                    <!-- Brand and toggle get grouped for better mobile display -->#}
+{#                    <div class="navbar-header">#}
+{#                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">#}
+{#                            <i class="fa fa-bars"></i>#}
+{#                        </button>#}
+{#                    </div>#}
+{#                    <!-- Collect the nav links, forms, and other content for toggling -->#}
+{#                    <div class="collapse navbar-collapse" id="menu">#}
+{#                        <ul class="nav navbar-nav navbar-right">#}
+{#                            <li class="active"><a href="/homepage/">Home</a></li>#}
+{#                            <li><a href="#about">About Me</a></li>#}
+{#                            <li><a href="/homepage/blog/">Blog</a></li>#}
+{#                            <li><a href="#contact">Contact</a></li>#}
+{#                        </ul>#}
+{#                    </div>#}
+{#                    <!-- /.Navbar-collapse -->#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <!-- /.container -->#}
+{#    </nav>#}
+{#</div>#}
+{#<!-- /Navigation -->#}
+{##}
+{#<!-- Section: about -->#}
+{#<section id="about" class="home-section color-dark bg-white">#}
+{#    <div class="container marginbot-50">#}
+{#        <div class="row">#}
+{#            <div class="col-lg-8 col-lg-offset-2">#}
+{#                <div class="animatedParent">#}
+{#                    <div class="section-heading text-center animated bounceInDown">#}
+{#                        <h2 class="h-bold">About Me</h2>#}
+{#                        <div class="divider-header"></div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{##}
+{#    <div class="container">#}
+{##}
+{##}
+{#        <div class="row">#}
+{##}
+{##}
+{#            <div class="col-lg-8 col-lg-offset-2 animatedParent">#}
+{#                <div class="text-center">#}
+{#                    <p>#}
+{#                        Hey, this is Songzi Wen, 温松子. You can call me Cindy if you like~. Currently, I am a master student in computer science at Yale University. I love Yale libraries!#}
+{#                    </p>#}
+{##}
+{#                    <p>#}
+{#                        I did my undergraduate at the University of Wisconsin-Madison. Amazing lake, yummy cheese, super friendly pepople and the best cs program made undergraduate years meaningful and memorable. Miss Wisconsin everyday!#}
+{#                    </p>#}
+{#                    <p>#}
+{#                        For me, if you ask me what kind of person that I want to be. I would say that I want to be strong outside, like a stone, can bear all the rain and wind, but soft inside, always shed tears for every single beautiful moment, even it is insignificant and transient.#}
+{#                    </p>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{##}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#</section>#}
+{#<!-- /Section: about -->#}
+{##}
+{##}
+{#<!-- Section: roles -->#}
+{#<section id="service" class="home-section color-dark bg-gray">#}
+{#    <div class="container marginbot-50">#}
+{#        <div class="row">#}
+{#            <div class="col-lg-8 col-lg-offset-2">#}
+{#                <div>#}
+{#                    <div class="section-heading text-center">#}
+{#                        <h2 class="h-bold">My roles</h2>#}
+{#                        <div class="divider-header"></div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{##}
+{#    <div class="text-center">#}
+{#        <div class="container">#}
+{##}
+{#            <div class="row animatedParent">#}
+{#                <div class="col-md-4">#}
+{#                    <div class="animated rotateInDownLeft slow">#}
+{#                        <div class="service-box">#}
+{#                            <div class="service-icon">#}
+{#                                <span class="fa fa-camera fa-2x"></span>#}
+{#                            </div>#}
+{#                            <div class="service-desc">#}
+{#                                <h5>Traveler</h5>#}
+{#                                <div class="divider-header"></div>#}
+{#                                <p>#}
+{#                                    In my spare time, I enjoy traveling, especially doing something really special and interesting. During my second summer in college, I went to Nepal as a science instructor volunteer for a primary shool in Kathmandu. My students are super hard-working, smart and cute. During weekdays, I teach them math, biology and chemistry. On weekends, they lead me to local market, temple and some sweets shop and introduce their religions and culture to me. It was such an amazing experience that I would never forget!#}
+{#                                </p>#}
+{##}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-4">#}
+{#                    <div class="animated rotateInDownLeft">#}
+{#                        <div class="service-box">#}
+{#                            <div class="service-icon">#}
+{#                                <span class="fa fa-laptop fa-2x"></span>#}
+{#                            </div>#}
+{#                            <div class="service-desc">#}
+{#                                <h5>Programmer</h5>#}
+{#                                <div class="divider-header"></div>#}
+{#                                <p>#}
+{#                                    When my cs intro instructor first taught us OOP using a "Manatee" example, I completely fell in love with programming and decided to change my major from business to computer science.#}
+{#                                    It was such a hard decision but it was definitely a right one for me. Till now, I still really enjoy programming. My interests are very broad: system, data sciences, web development, UI, etc., are all fantastic topics to me. My skills include Java, C++, C, Python, SQL, Django and web programming. I am looking for a full-time job in software development field.#}
+{#                                </p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#                <div class="col-md-4">#}
+{#                    <div class="animated rotateInDownLeft slower">#}
+{#                        <div class="service-box">#}
+{#                            <div class="service-icon">#}
+{#                                <span class="fa fa-code fa-2x"></span>#}
+{#                            </div>#}
+{#                            <div class="service-desc">#}
+{#                                <h5>Arty Person</h5>#}
+{#                                <div class="divider-header"></div>#}
+{#                                <p>#}
+{#                                    My friends sometimes say that I am literally a arty young(文艺青年), because I often post some confusing but kind of art-feeling(in my perspective) sentences on my social accounts such like "Eyes are raining for her, but heart is holding an umbrella for her". I have to admit that I am such a person with a lot of emotions. I laugh a lot and cry a lot. Sometimes, simple and ordinary sentence may cause me strong shared-feelings.#}
+{#                                    I enjoy reading arty literature like poem and prose, and sometimes I will also write down some article or lyrics.#}
+{#                                </p>#}
+{##}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
+{#<!-- /Section: roles -->#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#<!-- Section: works -->#}
+{#<section id="works" class="home-section color-dark text-center bg-white">#}
+{#    <div class="container marginbot-50">#}
+{#        <div class="row">#}
+{#            <div class="col-lg-8 col-lg-offset-2">#}
+{#                <div>#}
+{#                    <div class="animatedParent">#}
+{#                        <div class="section-heading text-center">#}
+{#                            <h2 class="h-bold animated bounceInDown">My Favorites!</h2>#}
+{#                            <div class="divider-header"></div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{##}
+{##}
+{#    <div class="container">#}
+{##}
+{#        <div class="row animatedParent">#}
+{##}
+{#            <div class="col-sm-12 col-md-12 col-lg-12" >#}
+{##}
+{#                <div class="row gallery-item">#}
+{#                    <div class="col-md-3 animated fadeInUp">#}
+{#                        <div class="myHome">#}
+{#                        <h6>Hometown</h6>#}
+{#                        </div>#}
+{#                        <p style="display:inline">photo:weihai ocean scene,from mom~</p>#}
+{#                        <img src="{% static 'img/works/weihai.jpg' %}" class="img-responsive" alt="img"/>#}
+{#                        <p>The silent ocean stares softly at the small city and the people living there, witnesses their joy and tears.This city is Weihai, my hometown, a beautiful harbor city on east coast of China. It is not big, maybe it does not have the rich resources for education and economy development, but it remain my warmest bay of heart.</p>#}
+{##}
+{#                    </div>#}
+{#                    <div class="col-md-3 animated fadeInUp slow">#}
+{#                        <h6>Faye Wong</h6>#}
+{#                        <img src="{% static 'img/works/faye.jpg' %}" class="img-responsive" alt="img"/>#}
+{#                        <p>Faye is a well-know Chinese singer, often be called as "Heavenly Queen". Her voice is so gentel, exquisite and has a touch of melancholy. The background music for this page is her song "eyes on me", turn on the sound and enjoy it!</p>#}
+{#                    </div>#}
+{#                    <div class="col-md-3 animated fadeInUp slower">#}
+{#                        <h6>Reading</h6>#}
+{#                        <p style="display:inline">photo:yale law library</p>#}
+{#                        <img src="{% static 'img/works/yale.jpg' %}" class="img-responsive" alt="img"/>#}
+{#                        <p> My father is a big bookworm, so am I! The happiest thing when I was a child was to go bookstore with my dad. I read all kinds of books, popular novel, history books, literary classics, poem and prose. My favorite book is "The Ordinary World" by Yao Lu, and my favorite writer is Zijian Chi.</p>#}
+{##}
+{#                    </div>#}
+{#                    <div class="col-md-3 animated fadeInUp">#}
+{#                        <h6>Piano</h6>#}
+{#                        <img src="{% static 'img/works/piano.jpg' %}" class="img-responsive" alt="img"/>#}
+{#                        <p>I usually practiced piano when I was a child. I actually won the Championship of Shandong Province Piano Contest(haha, my province has more than 1 billion people). However,I have stopped practicing it for a long time since I really need to focus on my school work. I swear I will pick it up after I finish my school.</p>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#</section>#}
+{#<!-- /Section: works -->#}
+{##}
+{##}
+{##}
+{##}
+{#<!-- Section: contact -->#}
+{#<section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">#}
+{#    <div class="container marginbot-50">#}
+{#        <div class="row">#}
+{#            <div class="col-lg-8 col-lg-offset-2">#}
+{#                <div class="animatedParent">#}
+{#                    <div class="section-heading text-center">#}
+{#                        <h2 class="h-bold animated bounceInDown">Get in touch with me</h2>#}
+{#                        <div class="divider-header"></div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{##}
+{#    <div class="container">#}
+{#        <div class="contactInfo">#}
+{#        <p>Email: songzi.wen@yale.edu</p>#}
+{#        <p>Phone: 608-886-8932</p>#}
+{#        <p>Wechat: cindywen93</p>#}
+{#        <p>Address: 51 Prospect St. #010, New Haven, CT, USA</p>#}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
+{#<!-- /Section: contact -->#}
+{##}
+{##}
+{#<footer>#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-6">#}
+{#                <ul class="footer-menu">#}
+{#                    <li><a href="#">Go Top</a></li>#}
+{#                    <li><a href="/homepage/">Home</a></li>#}
+{#                    <li><a href="/homepage/blog">Blog</a></li>#}
+{#                </ul>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</footer>#}
+{#<!-- Core JavaScript Files -->#}
+{##}
+{#<script src="{% static 'js/jquery.min.js' %}"></script>#}
+{#<script src="{% static 'js/bootstrap.min.js' %}"></script>#}
+{#<script src="{% static 'js/jquery.sticky.js' %}"></script>#}
+{#<script src="{% static 'js/jquery.easing.min.js' %}"></script>#}
+{#<script src="{% static 'js/jquery.scrollTo.js' %}"></script>#}
+{#<script src="{% static 'js/jquery.appear.js' %}"></script>#}
+{#<script src="{% static 'js/stellar.js' %}"></script>#}
+{#<script src="{% static 'js/nivo-lightbox.min.js' %}"></script>#}
+{#<script src="{% static 'js/custom.js' %}"></script>#}
+{#<script src="{% static 'js/css3-animate-it.js' %}"></script>#}
+{#<script src="{% static 'contactform/contactform.js' %}"></script>#}
+{##}
+{#</body>#}
+{##}
+{#</html>#}

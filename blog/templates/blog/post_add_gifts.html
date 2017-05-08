@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% load staticfiles %}
+
+    <div class="addgifts">
+        <h1>Click the picture to express your feelings!</h1>
+        <br>
+        <pre>
+        <br>
+        <a href="{% url 'post_add_likes' pk=post.pk %}"><img src={% static 'images/heart.gif' %} /></a>
+        <p> I like this article! </p>
+        <br>
+        <br>
+        <a href="{% url 'post_add_eggs' pk=post.pk %}"><img src={% static 'images/sun.gif' %} /></a>
+        <p> Songzi, you have done a great job! You are sunshine! </p>
+        <br>
+        <br>
+        <a href="{% url 'post_add_flowers' pk=post.pk %}"><img src={% static 'images/cry.gif' %} /></a>
+        <p> What are you talking about! I don't like this article! : ( </p>
+        <br>
+        <br>
+        <a href="{% url 'post_add_knees' pk=post.pk %}"><img src={% static 'images/knee.png' %} /></a>
+        <p> Please accept my knees!!</p>
+        </pre>
+        <br>
+    </div>
+
+
+{% endblock %}

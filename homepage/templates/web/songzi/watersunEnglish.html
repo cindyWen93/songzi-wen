@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name = "author" content="CindyWen" />
+    <meta http-equiv = "content-type" content = "text/html; charset = utf-8" />
+
+    <title>
+        水日
+    </title>
+
+    {% load staticfiles %}
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+        body{
+            background:url("{% static  'homepage/images/mountain.jpg'%}");
+            background-size:103%;
+            background-repeat:no-repeat;
+            background-attachment：fixed;
+        }
+        h1{
+            font-family:"STKaiti";
+            margin-top:5px;
+            margin-bottom:-5px;
+            font-size: 120px;
+        }
+{#        footer p{#}
+{#            font-family:"STKaiti", cursive;#}
+{#            position:fixed;#}
+{#            left:40%;#}
+{#            bottom:-1%;#}
+{#            height:22px;#}
+{#            width:100%;#}
+{#            color:grey;#}
+{#        }#}
+        footer p{
+    font-family:"STKaiti";
+    color:grey;
+    margin: 0;
+    padding: 10px 0;
+    position:absolute;
+    top:90%;
+    left:40%;
+    }
+
+        .language{
+            position:absolute;
+            top:0%;
+            right:1%
+        }
+
+        .language pre a{
+            text-decoration:none;
+            color:grey;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+<div class="language">
+<pre>
+    <a href="/homepage/blog/">Blog</a>  <a href="/homepage/myselfEnglish/">关于我</a>
+</pre>
+</div>
+
+
+<h1>
+    水日
+</h1>
+
+<pre>
+活到十八九岁，才知道自己竟然是活在井底的，只见过簸箕大的天。
+翻过西皋岭，越过庄子岭，再跨过一条河，走上一百二十里，
+就是另一番天地————那是永远也望不到尽头的云蒸霞蔚的天和万水千山的地。
+
+</pre>
+
+
+{#<nav id="menu">#}
+{#    <ul class="myMenu">#}
+{#        <li><a href="/homepage/music/">Music</a></li>#}
+{#        <li><a href="/homepage/blog/">Iridescent Dream</a></li>#}
+{#        <li><a href="/homepage/myselfEnglish/">About Cindy</a></li>#}
+{#    </ul>#}
+{#</nav>#}
+
+
+<footer>
+    <p>
+        WaterSun&#169;2014 Copyright 松子
+    </p>
+</footer>
+
+
+<audio autoplay loop>
+    <source src="{% static  'homepage/music/yuanfang.m4a'%}" type="audio/x-aac"/>
+    <source src="{% static  'homepage/music/yuanfang.mp3'%}" type="audio/mpeg"/>
+    <source src="{% static  'homepage/music/yuanfang.ogg'%}" type="audio/ogg"/>
+</audio>
+
+
+</body>
+</html>

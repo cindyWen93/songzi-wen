@@ -1,0 +1,9 @@
+{%  if all_songs %}
+    <ul>
+        {%  for song in all_songs %}
+            <li><{{ song.song_title }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>Ooopps no song now..sad..call cindy to add some songs!</h3>
+{% endif %}

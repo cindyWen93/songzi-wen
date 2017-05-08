@@ -1,0 +1,104 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    友
+    </title>
+    <meta name = "author" content="CindyWen" />
+    <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8" />
+    <style>
+    body{
+	background: url("{% static  'homepage/images/purple.jpg'%}");
+	background-repeat: no-repeat;
+    background-attachment：fixed; 
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+    }
+    #text{
+	position:absolute;
+	top:3%;
+	right:5%;
+	color: #F0F0F0;
+
+    }
+    pre{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    }
+    footer p{
+	font-family: "STKaiti";
+	color: grey;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	top: 639px;
+	left: 493px;
+	width: 286px;
+	height: 10px;
+    }
+	.picture{
+	align: middle;
+	display: block;
+	position: absolute;
+	left: 25px;
+	top: 14px;
+	width: 1315px;
+	height: 654px;
+	}
+    
+    </style>
+</head>
+
+<body>
+<div class="picture">
+	
+		<img src="{% static  'homepage/images/friends.png' %}" width="1300" height="647"
+		 alt="啊哦，图片不能正常显示了"   usemap="myusemap">
+
+		 <map name="myusemap">
+
+         <area shape="rect" coords="115,429,234,537" href="{% static '/friends/chen/zhiyang-chen.html'%}" alt="陈的页">
+		 <area shape="rect" coords="847,289,966,396" href="{% static '/friends/zou/victoria.html'%}">
+		 
+		 <!--
+		 <area shape="rect" coords="1149,190,1268,296" href="xvyuying.html" alt="徐哥的页">
+		 <area shape="rect" coords="620,231,737,336" href="myself.html" alt="my page">
+		 <area shape="rect" coords="1086,394,1204,498" href="wangyifei.html" alt="妃姐的页">
+
+         <area shape="rect" coords="856,503,909,557" href="wangxiaozhou.html" alt="xiaozhou's page">
+         <area shape="rect" coords="674,496,728,548" href="shiguowei.html" alt="大宝的页">
+         <area shape="rect" coords="412,377,531,486" href="zhangmingyang.html" alt="明旸的页">
+         <area shape="rect" coords="261,337,381,445" href="hanbingjun.html" alt="韩胖的页">
+
+         <area shape="rect" coords="42,182,166,291" href="xvhanlin.html" alt="翰林的page">
+         <area shape="rect" coords="240,30,360,137" href="xiayue.html" alt="Joey's page">
+         <area shape="rect" coords="487,107,547,168" href="fanlei.html" alt="范磊的页">
+         <area shape="rect" coords="748,91,805,147" href="lijiahui.html" alt="佳慧的页">
+         <area shape="rect" coords="838,167,898,229" href="richard.html" alt="Richard's page">-->
+
+         
+         </map>
+	
+</div>
+
+<div id="text">
+<h1>
+Friends
+</h1>
+<pre>
+浪迹天涯走过许多地方
+    蜂飞蝶舞惹出许多荒唐
+</pre>
+</div>
+
+<footer>
+     <p>
+    水日&#169;2014 Copyright 温松子Cindy Wen
+     </p>
+</footer>
+</body>
+
+</html>
